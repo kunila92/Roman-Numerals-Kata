@@ -1,0 +1,5 @@
+C:\Users\kunil\Desktop\RomanNumeralsKata\RomanNumeralsKata.Test\bin\Debug\RomanNumeralsKata.Test.dll
+C:\Users\kunil\Desktop\RomanNumeralsKata\RomanNumeralsKata.Test\bin\Debug\RomanNumeralsKata.Test.pdb
+C:\Users\kunil\Desktop\RomanNumeralsKata\RomanNumeralsKata.Test\obj\Debug\RomanNumeralsKata.Tests.csprojResolveAssemblyReference.cache
+C:\Users\kunil\Desktop\RomanNumeralsKata\RomanNumeralsKata.Test\obj\Debug\RomanNumeralsKata.Test.dll
+C:\Users\kunil\Desktop\RomanNumeralsKata\RomanNumeralsKata.Test\obj\Debug\RomanNumeralsKata.Test.pdb
