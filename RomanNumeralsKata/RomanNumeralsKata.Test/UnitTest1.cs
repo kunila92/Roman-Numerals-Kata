@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace RomanNumeralsKata.Test
+namespace RomanNumeralsKata.Tests
 {
     [TestClass]
     public class UnitTest1
