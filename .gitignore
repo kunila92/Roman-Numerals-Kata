@@ -2,8 +2,6 @@
 *.exe
 *.cache
 *.txt
-*.dll
 *.ldf
 *.mdf
-*.cs
 *.suo
