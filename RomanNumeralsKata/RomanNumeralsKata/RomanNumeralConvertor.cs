@@ -15,22 +15,26 @@ namespace RomanNumeralsKata
             {"X", 10}
         };
 
-        public string ConvertToRomanNumeral(int number)
+        public string ConvertToRomanNumeral(int givenNumber)
         {
             StringBuilder sb = new StringBuilder();
 
             foreach (KeyValuePair<string, int> literal in LiteralsDictionary)
             {
-                int staticValue = literal.Value;
-                if (number >= staticValue)
+                int currNumber = givenNumber;
+                if (currNumber >= literal.Value)
                 {
-                    while (number % staticValue == 0)
+                    int currDictionaryValue = literal.Value;
+                    int noOfIterations = (givenNumber - (givenNumber % currDictionaryValue)) / currDictionaryValue;
+                    
+                    while (noOfIterations > 0)
                     {
-                        sb.Append("I");
-                        staticValue += 1;
+                        sb.Append(literal.Key);
+                        noOfIterations--;
                     }
+
+                    currNumber = givenNumber % literal.Value;
                 }
-                else { continue; }
             }
             return sb.ToString();
         }

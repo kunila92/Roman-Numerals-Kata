@@ -34,18 +34,32 @@ namespace RomanNumeralsKata.Tests
             Assert.AreEqual(rNumeral, "II");
         }
 
+        [TestMethod]
+        public void Given3ReturnIII()
+        {
+            //Arrange
+            int i = 3;
+            RomanNumeralConvertor rnc = new RomanNumeralConvertor();
+
+            // Act
+            string rNumeral = rnc.ConvertToRomanNumeral(i);
+
+            // Assert
+            Assert.AreEqual(rNumeral, "III");
+        }
+
         //[TestMethod]
-        //public void Given3ReturnIII()
+        //public void Given9ReturnIX()
         //{
         //    //Arrange
-        //    int i = 3;
+        //    int i = 9;
         //    RomanNumeralConvertor rnc = new RomanNumeralConvertor();
 
         //    // Act
         //    string rNumeral = rnc.ConvertToRomanNumeral(i);
 
         //    // Assert
-        //    Assert.AreEqual(rNumeral, "III");
+        //    Assert.AreEqual(rNumeral, "IX");
         //}
     }
 }
