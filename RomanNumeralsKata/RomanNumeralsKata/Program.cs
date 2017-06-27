@@ -22,6 +22,12 @@ namespace RomanNumeralsKata
                     RomanNumeralConvertor rnm = new RomanNumeralConvertor();
                     output = rnm.ConvertToRomanNumeral(givenNumber);
                     break;
+                case "2":
+                    Console.WriteLine("Please enter a number to convert.");
+                    string givenNumeral = Console.ReadLine();
+                    RomanNumeralsToNumber rnn = new RomanNumeralsToNumber();
+                    output = rnn.ConvertToNumber(givenNumeral);
+                    break;
             }
             Console.WriteLine("Output is :" + output);
             Console.WriteLine("Enter any key to exit.");
