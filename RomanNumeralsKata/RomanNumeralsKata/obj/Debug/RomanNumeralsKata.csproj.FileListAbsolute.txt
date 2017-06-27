@@ -1,9 +1,0 @@
-C:\Users\kunil\Desktop\RomanNumeralsKata\RomanNumeralsKata\bin\Debug\RomanNumeralsKata.exe.config
-C:\Users\kunil\Desktop\RomanNumeralsKata\RomanNumeralsKata\bin\Debug\RomanNumeralsKata.exe
-C:\Users\kunil\Desktop\RomanNumeralsKata\RomanNumeralsKata\bin\Debug\RomanNumeralsKata.pdb
-C:\Users\kunil\Desktop\RomanNumeralsKata\RomanNumeralsKata\obj\Debug\RomanNumeralsKata.csprojResolveAssemblyReference.cache
-C:\Users\kunil\Desktop\RomanNumeralsKata\RomanNumeralsKata\obj\Debug\RomanNumeralsKata.exe
-C:\Users\kunil\Desktop\RomanNumeralsKata\RomanNumeralsKata\obj\Debug\RomanNumeralsKata.pdb
-C:\RomanNumeralsKata\RomanNumeralsKata\RomanNumeralsKata\bin\Debug\RomanNumeralsKata.exe.config
-C:\RomanNumeralsKata\RomanNumeralsKata\RomanNumeralsKata\obj\Debug\RomanNumeralsKata.exe
-C:\RomanNumeralsKata\RomanNumeralsKata\RomanNumeralsKata\obj\Debug\RomanNumeralsKata.pdb

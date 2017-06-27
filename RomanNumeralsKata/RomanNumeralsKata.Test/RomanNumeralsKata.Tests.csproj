@@ -6,7 +6,7 @@
     <ProjectGuid>{EC7FFCD5-61E4-4A68-A186-C9CA8DCA2DA2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RomanNumeralsKata.Test</RootNamespace>
+    <RootNamespace>RomanNumeralsKata.Tests</RootNamespace>
     <AssemblyName>RomanNumeralsKata.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -50,8 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="RomanNumeralConvertorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RomanNumeralsKata\RomanNumeralsKata.csproj">
+      <Project>{5ed30ea4-13f4-471c-8e84-ef7aa36d9a2e}</Project>
+      <Name>RomanNumeralsKata</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
