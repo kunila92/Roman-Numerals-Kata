@@ -48,18 +48,46 @@ namespace RomanNumeralsKata.Tests
             Assert.AreEqual(rNumeral, "III");
         }
 
-        //[TestMethod]
-        //public void Given9ReturnIX()
-        //{
-        //    //Arrange
-        //    int i = 9;
-        //    RomanNumeralConvertor rnc = new RomanNumeralConvertor();
+        [TestMethod]
+        public void Given9ReturnIX()
+        {
+            //Arrange
+            int i = 9;
+            RomanNumeralConvertor rnc = new RomanNumeralConvertor();
 
-        //    // Act
-        //    string rNumeral = rnc.ConvertToRomanNumeral(i);
+            // Act
+            string rNumeral = rnc.ConvertToRomanNumeral(i);
 
-        //    // Assert
-        //    Assert.AreEqual(rNumeral, "IX");
-        //}
+            // Assert
+            Assert.AreEqual(rNumeral, "IX");
+        }
+
+        [TestMethod]
+        public void Given1066ReturnMLXVI()
+        {
+            //Arrange
+            int i = 1066;
+            RomanNumeralConvertor rnc = new RomanNumeralConvertor();
+
+            // Act
+            string rNumeral = rnc.ConvertToRomanNumeral(i);
+
+            // Assert
+            Assert.AreEqual(rNumeral, "MLXVI");
+        }
+
+        [TestMethod]
+        public void Given1989ReturnMCMLXXXIX()
+        {
+            //Arrange
+            int i = 1989;
+            RomanNumeralConvertor rnc = new RomanNumeralConvertor();
+
+            // Act
+            string rNumeral = rnc.ConvertToRomanNumeral(i);
+
+            // Assert
+            Assert.AreEqual(rNumeral, "MCMLXXXIX");
+        }
     }
 }

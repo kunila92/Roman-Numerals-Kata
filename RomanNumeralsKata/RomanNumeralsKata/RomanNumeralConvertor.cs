@@ -10,9 +10,19 @@ namespace RomanNumeralsKata
     {
         private readonly Dictionary<string, int> LiteralsDictionary = new Dictionary<string, int>()
         {
-            {"I", 1},
-            {"V", 5},
-            {"X", 10}
+            // Assuming taking following numbers in List are fine like 4, 9, 40, 400, 900, etc.
+            { "M",1000 },
+            { "CM",900 },  
+            { "D",500 },
+            { "CD",400 },
+            { "C",100 },
+            { "L",50 },
+            { "XL",40 },
+            { "X",10 },
+            { "IX",9},
+            { "V",5 },
+            { "IV",4 },
+            { "I",1 }  
         };
 
         public string ConvertToRomanNumeral(int givenNumber)
@@ -21,19 +31,10 @@ namespace RomanNumeralsKata
 
             foreach (KeyValuePair<string, int> literal in LiteralsDictionary)
             {
-                int currNumber = givenNumber;
-                if (currNumber >= literal.Value)
+                while (givenNumber >= literal.Value)
                 {
-                    int currDictionaryValue = literal.Value;
-                    int noOfIterations = (givenNumber - (givenNumber % currDictionaryValue)) / currDictionaryValue;
-                    
-                    while (noOfIterations > 0)
-                    {
-                        sb.Append(literal.Key);
-                        noOfIterations--;
-                    }
-
-                    currNumber = givenNumber % literal.Value;
+                    sb.Append(literal.Key);
+                    givenNumber = givenNumber - literal.Value;
                 }
             }
             return sb.ToString();
