@@ -10,6 +10,22 @@ namespace RomanNumeralsKata
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please choose which task to perform either by entering 1 or 2.");
+            Console.WriteLine("1 - Convert givenNumber to Roman Numeral. \n2 - Convert RomanNumeral to Number. ");
+            string choice = Console.ReadLine();
+            string output = string.Empty;
+            switch (choice)
+            {
+                case "1":
+                    Console.WriteLine("Please enter a number to convert.");
+                    int givenNumber = Int32.Parse(Console.ReadLine());
+                    RomanNumeralConvertor rnm = new RomanNumeralConvertor();
+                    output = rnm.ConvertToRomanNumeral(givenNumber);
+                    break;
+            }
+            Console.WriteLine("Output is :" + output);
+            Console.WriteLine("Enter any key to exit.");
+            Console.ReadLine();
         }
     }
 }
