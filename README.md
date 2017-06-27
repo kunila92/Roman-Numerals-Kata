@@ -1,5 +1,9 @@
 # Roman-Numerals-Kata
-Converting to roman numerals
+This program handles the following items:-
+1) Converting given integers to roman numerals
+2) Converting roman numerals to integers.
+3) Handling for validations like given numbers 0 or less to error in first step.
+4) Similarly some basic validation in step 2.
 
 Usage: 
 1) Go to "RomanNumeralsKata\RomanNumeralsKata\bin\Debug" folder.
