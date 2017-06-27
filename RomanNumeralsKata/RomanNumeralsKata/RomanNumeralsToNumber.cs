@@ -10,11 +10,28 @@ namespace RomanNumeralsKata
     {
         public string ConvertToNumber(string givenNumeral)
         {
-            StringBuilder sb = new StringBuilder();
+            if (givenNumeral == "") { return "Invalid Input."; };
 
-            if (givenNumeral == "I")
-                sb.Append("1");
-            return sb.ToString();
+            int retVal = 0;
+            while (!string.IsNullOrEmpty(givenNumeral))
+            {
+                foreach (string currentKey in Helper.LiteralsDictionary.Keys)
+                {
+                    if (givenNumeral.StartsWith(currentKey))
+                    {
+                        retVal = retVal + GetValueOfGivenKey(currentKey);
+                        givenNumeral = givenNumeral.Substring(currentKey.Length);
+                        break;
+                    }
+                }
+            }
+
+            return retVal.ToString();
+        }
+
+        private int GetValueOfGivenKey(string givenKey)
+        {
+            return Helper.LiteralsDictionary[givenKey];
         }
     }
 }
